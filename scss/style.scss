@@ -16,6 +16,7 @@
 }
 
 $snow: snow;
+$pastel-pizza: OldLace;
 
 p,
 li,
@@ -39,13 +40,23 @@ figure {
     background-color: $snow;
 }
 
+.position,
+.info>ul>li,
+.products>ul>li,
+.description {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 footer {
-    background-color: ivory;
+    background-color: $pastel-pizza;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
 }
 
 .info {
@@ -58,7 +69,6 @@ footer {
 }
 
 .info>ul>li {
-    list-style-type: none;
     padding: 0 20px;
 }
 
@@ -106,7 +116,6 @@ header {
 
 .products>ul>li {
     display: inline-block;
-    list-style-type: none;
     margin: 0 10px 0 10px;
 }
 
@@ -116,10 +125,6 @@ header {
     margin-top: 20px;
     padding: 20px;
     flex-flow: row wrap;
-}
-
-article {
-    border-radius: 0 0 20px 20px;
 }
 
 form {
@@ -160,6 +165,5 @@ img {
 }
 
 .description {
-    list-style-type: none;
     margin-right: 20px;
 }

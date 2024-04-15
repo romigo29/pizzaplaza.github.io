@@ -19,11 +19,6 @@
   zoom: 30%;
 }
 
-.info > ul > li {
-  list-style-type: none;
-  padding: 0 20px;
-}
-
 .pizza_plaza {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 160%;
@@ -37,17 +32,16 @@
 }
 
 .promotions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 300px;
   position: relative;
 }
 
 .promotions img {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
-  justify-self: center;
   object-fit: cover;
   opacity: 0;
   animation: changeImage 5s infinite;
