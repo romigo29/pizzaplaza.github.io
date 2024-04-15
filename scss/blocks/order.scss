@@ -1,0 +1,14 @@
+$order-color: #1776a5;
+$pastel-order: #63bdea;
+
+.order {
+    background-color: $order-color;
+}
+
+.variants_order {
+    background-color: $pastel-order;
+}
+
+.form_order {
+    border: 2px dashed;
+}
