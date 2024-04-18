@@ -9,14 +9,13 @@
 @import "./blocks/company";
 @import "./blocks/job";
 
-@media screen and (max-width: 920px) {
-    .logo {
-        border-radius: 300px;
-    }
-}
 
 $snow: snow;
 $pastel-pizza: OldLace;
+
+figure {
+    margin: 10px;
+}
 
 p,
 li,
@@ -68,8 +67,9 @@ footer {
     display: flex;
 }
 
-.info>ul>li {
+.info ul li {
     padding: 0 20px;
+    margin-top: 4px;
 }
 
 .compound {
@@ -100,6 +100,7 @@ header {
 
 .logo-brand {
     display: flex;
+    width: 100vw;
 }
 
 .photo {
@@ -121,30 +122,34 @@ header {
 
 .variants {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
-    padding: 20px;
+    // padding: 20px;
     flex-flow: row wrap;
 }
 
 form {
     background-color: aliceblue;
     color: dimgrey;
-    padding-left: 20px;
-    padding-top: 1px;
-    padding-bottom: 20px;
+    // padding-left: 20px;
+    // padding-top: 1px;
+    // padding-bottom: 20px;
+    margin: 20px 0;
+    padding: 40px;
     font-size: 1.2em;
-    width: 500px;
+    border-radius: 30px;
+    width: 80%;
 }
 
 .pizza_plaza {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: snow;
-    font-size: 160%;
+    font-size: 30px;
     padding: 10px;
 }
 
 figcaption {
+    word-break: break-all;
     font-style: bold;
     font-size: larger;
     font-weight: 800;
@@ -166,4 +171,109 @@ img {
 
 .description {
     margin-right: 20px;
+}
+
+@media (max-width: 920px) {
+    .logo {
+        border-radius: 300px;
+    }
+
+    .main {
+        margin: 40px 20px 0 20px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .promotions img {
+        width: 100%;
+    }
+
+    .promotions {
+        height: 500px;
+    }
+
+    .vacancies {
+        margin: 0;
+
+        ul {
+            padding-left: 30px;
+        }
+    }
+
+    .variants {
+        padding: 50px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width:630px) {
+    .description {
+        margin-right: 10px;
+    }
+
+    .promotions img {
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .info ul {
+        display: block;
+    }
+
+    .variants {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .main {
+        margin: 0;
+    }
+
+    .logo-brand {
+        width: 15%;
+
+        img {
+            width: 100%;
+        }
+
+        .pizza_plaza {
+            font-size: 20px;
+        }
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .info>ul>li {
+        padding: 0 2px;
+
+        a {
+            font-size: 15px;
+        }
+    }
+
+    .description {
+        padding: 10px;
+    }
+
+    .vacancies {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        ul {
+            padding-left: 20px;
+        }
+    }
+
+    .description {
+        margin: 0;
+    }
 }

@@ -16,3 +16,9 @@ $pastel-dough: #FCE388;
 figure:hover .figure {
     transform: scale(1.1);
 }
+
+
+.variants_pizza .buttons button:focus {
+    background-color: snow;
+    color: firebrick;
+}
