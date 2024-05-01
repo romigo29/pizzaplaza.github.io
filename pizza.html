@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <section class="main">
         <header class="pizza">
             <div class="logo-brand">
                 <img src="./изображения/logo.svg" class="logo">
@@ -23,16 +23,16 @@
                 </ul>
             </div>
         </header>
-        <div class="products">
+        <section class="products">
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="drinks.html">Напитки</a></li>
                 <li><a href="sauce.html">Соусы</a></li>
                 <li><a href="dessert.html">Десерты</a></li>
             </ul>
-        </div>
+        </section>
         <article class="variants_pizza">
-            <div class="variants">
+            <section class="variants">
                 <figure>
                     <img src="./пиццы/peperonni.png" class="photo">
                     <figcaption>Пеперонни</figcaption>
@@ -47,12 +47,18 @@
                         </div>
                         <li class="compound">Состав: сыр, cоус Плаза, переронни</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('peperonni')">-</button>
+                        <span id="quantity_peperonni">0</span>
+                        <button onclick="increaseNumber('peperonni')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./пиццы/mushroom.png" class="photo">
                     <figcaption>Грибная</figcaption>
                     <ul class="description">
-                        <li id="price_2">Цена: 8.99р</li>
+                        <li id="price_2">Цена: 9.49р</li>
                         <div class="buttons">
                             <li>Размер:
                                 <button data-pizza-id="2" data-size="S">S</button>
@@ -62,12 +68,18 @@
                         </div>
                         <li class="compound">Состав: cыр, соус Плаза, грибы, пеперонни</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('mushroom')">-</button>
+                        <span id="quantity_mushroom">0</span>
+                        <button onclick="increaseNumber('mushroom')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./пиццы/hawaii.png" class="photo">
                     <figcaption>Гавайская</figcaption>
                     <ul class="description">
-                        <li id="price_3">Цена: 8.99р</li>
+                        <li id="price_3">Цена: 9.99р</li>
                         <div class="buttons">
                             <li>Размер:
                                 <button data-pizza-id="3" data-size="S">S</button>
@@ -77,12 +89,18 @@
                         </div>
                         <li class="compound">Состав: сыр, соус Карри, ветчина, томаты, ананасы</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('hawaii')">-</button>
+                        <span id="quantity_hawaii">0</span>
+                        <button onclick="increaseNumber('hawaii')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./пиццы/provance.png" class="photo">
                     <figcaption>Прованс</figcaption>
                     <ul class="description">
-                        <li id="price_4">Цена: 8.99р</li>
+                        <li id="price_4">Цена: 10.49р</li>
                         <div class="buttons">
                             <li>Размер:
                                 <button data-pizza-id="4" data-size="S">S</button>
@@ -92,12 +110,18 @@
                         </div>
                         <li class="compound">Состав: сыр соус Плаза, сыр Моцарелла, томаты черри, рукола</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('provance')">-</button>
+                        <span id="quantity_provance">0</span>
+                        <button onclick="increaseNumber('provance')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./пиццы/extravagant.png" class="photo">
                     <figcaption>Экстравагантная</figcaption>
                     <ul class="description">
-                        <li id="price_5">Цена: 8.99р</li>
+                        <li id="price_5">Цена: 10.99р</li>
                         <div class="buttons">
                             <li>Размер:
                                 <button data-pizza-id="5" data-size="S">S</button>
@@ -107,12 +131,18 @@
                         </div>
                         <li class="compound">Состав: сыр, соус Плаза, пеперонни, томаты, грибы, оливки, рукола</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('extravagant')">-</button>
+                        <span id="quantity_extravagant">0</span>
+                        <button onclick="increaseNumber('extravagant')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./пиццы/lux.png" class="photo">
                     <figcaption>Люкс</figcaption>
                     <ul class="description">
-                        <li id="price_6">Цена: 8.99р</li>
+                        <li id="price_6">Цена: 11.49р</li>
                         <div class="buttons">
                             <li>Размер:
                                 <button data-pizza-id="6" data-size="S">S</button>
@@ -122,13 +152,25 @@
                         </div>
                         <li class="compound">Состав: сыр, соус Плаза, пеперонни, томаты, лук, рукола</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('lux')">-</button>
+                        <span id="quantity_lux">0</span>
+                        <button onclick="increaseNumber('lux')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
-            </div>
+            </section>
         </article>
         <footer>
-            <p>Контакты: Игорь Романов pigeon99905@gmail.com</p>
+            <div class="icons">
+                <a href="https://github.com/romigo29"><img src="./изображения/github.png" class="icon"></a>
+            </div>
+            <div class="worktime"> Время работы: Пн - Чт 10:00-22:00, Пт - Вс 10:00-23:00; без праздников и выходных!
+            </div>
+            <div class="location"> Республика Беларусь, г. Минск. ул. Свердлова 13а</div>
+            <div class="copyright"> ©Pizza Plaza, 2024</div>
         </footer>
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

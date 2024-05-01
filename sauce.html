@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <section class="main">
         <header class="sauce">
             <div class="logo-brand">
                 <img src="./изображения/logo.svg" class="logo">
@@ -23,22 +23,28 @@
                 </ul>
             </div>
         </header>
-        <div class="products">
+        <section class="products">
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="pizza.html">Пицца</a></li>
                 <li><a href="drinks.html">Напитки</a></li>
                 <li><a href="dessert.html">Десерты</a></li>
             </ul>
-        </div>
+        </section>
         <article class="variants_sauce">
-            <div class="variants">
+            <section class="variants">
                 <figure>
                     <img src="./соусы/ketchup.png" class="photo">
                     <figcaption>Томатный</figcaption>
                     <ul class="description">
                         <li class="price">Цена: 0,69р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('ketchup')">-</button>
+                        <span id="quantity_ketchup">0</span>
+                        <button onclick="increaseNumber('ketchup')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./соусы/cheese.png" class="photo">
@@ -46,6 +52,12 @@
                     <ul class="description">
                         <li class="price">Цена: 0,69р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('cheese')">-</button>
+                        <span id="quantity_cheese">0</span>
+                        <button onclick="increaseNumber('cheese')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./соусы/garlic.png" class="photo">
@@ -53,6 +65,12 @@
                     <ul class="description">
                         <li class="price">Цена: 0,69р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('garlic')">-</button>
+                        <span id="quantity_garlic">0</span>
+                        <button onclick="increaseNumber('garlic')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./соусы/barbeque.png" class="photo">
@@ -60,13 +78,26 @@
                     <ul class="description">
                         <li class="price">Цена: 0,69р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('barbeque')">-</button>
+                        <span id="quantity_barbeque">0</span>
+                        <button onclick="increaseNumber('barbeque')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
-            </div>
+            </section>
         </article>
         <footer>
-            <p>Контакты: Игорь Романов pigeon99905@gmail.com</p>
+            <div class="icons">
+                <a href="https://github.com/romigo29"><img src="./изображения/github.png" class="icon"></a>
+            </div>
+            <div class="worktime"> Время работы: Пн - Чт 10:00-22:00, Пт - Вс 10:00-23:00; без праздников и выходных!
+            </div>
+            <div class="location"> Республика Беларусь, г. Минск. ул. Свердлова 13а</div>
+            <div class="copyright"> ©Pizza Plaza, 2024</div>
         </footer>
-    </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+$job-color: #004060;
+$pastel-job: #1da6eb;
+
+.job {
+    background-color: $job-color;
+}
+
+label {
+    display: inline-block;
+    width: 175px;
+    padding-right: 15px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.variants_job {
+    background-color: $pastel-job;
+}
+
+select {
+    margin-bottom: 40px;
+}
+
+.vacancies {
+    // margin: 40px 100px 40px 100px;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 30px;
+    width: 80%;
+}

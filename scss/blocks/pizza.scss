@@ -1,5 +1,6 @@
 $dough: #F9C303;
 $pastel-dough: #FCE388;
+$firebrick: firebrick;
 
 .pizza {
     background-color: $dough;
@@ -10,15 +11,14 @@ $pastel-dough: #FCE388;
 }
 
 .variants_pizza .buttons button {
-    background-color: firebrick;
+    background-color: $firebrick;
+}
+
+.variants_pizza .buttons button:focus {
+    color: $firebrick;
+    background-color: snow;
 }
 
 figure:hover .figure {
     transform: scale(1.1);
-}
-
-
-.variants_pizza .buttons button:focus {
-    background-color: snow;
-    color: firebrick;
 }

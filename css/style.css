@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @keyframes changeImage {
   0% {
     opacity: 1;
@@ -37,12 +39,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 
 .promotions img {
-  width: 70%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
@@ -83,13 +84,13 @@
   background-color: firebrick;
 }
 
-figure:hover .figure {
-  transform: scale(1.1);
+.variants_pizza .buttons button:focus {
+  color: firebrick;
+  background-color: snow;
 }
 
-.variants_pizza .buttons button:focus {
-  background-color: snow;
-  color: firebrick;
+figure:hover .figure {
+  transform: scale(1.1);
 }
 
 .drinks {
@@ -124,17 +125,32 @@ figure:hover .figure {
   background-color: #63bdea;
 }
 
-.form_order {
-  border: 2px dashed;
+.notification {
+  padding: 20px;
+  text-align: center;
 }
 
 .company {
   background-color: #004060;
 }
 
-.about {
+.about,
+.first {
   font-size: 130%;
   line-height: 1.5;
+  text-indent: 3em;
+}
+
+.first:first-letter {
+  font-size: 200%;
+  background-color: #004060;
+}
+
+.info_img {
+  display: block;
+  margin: auto;
+  max-width: 75%;
+  height: auto;
 }
 
 .job {
@@ -158,14 +174,40 @@ select {
 }
 
 .vacancies {
+  margin: 40px 100px 40px 100px;
   padding: 40px;
   margin-top: 40px;
   border-radius: 30px;
   width: 80%;
 }
 
+form button {
+  font-size: 16px;
+}
+
+#registration {
+  background-color: #1da6eb;
+}
+
+#cancel {
+  background-color: #FF5640;
+}
+
+html {
+  min-width: 390px;
+}
+
 figure {
   margin: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50p;
+}
+
+.notification {
+  font-family: "Montserrat";
 }
 
 p,
@@ -175,17 +217,29 @@ h2 {
   font-family: "JetBrains Mono";
 }
 
+.about,
+.first {
+  font-family: "Comfortaa";
+}
+
 .info li a,
 .pizza_plaza,
 .variants_pizza .buttons button,
-h1 {
+h1,
+.first:first-letter,
+#registration,
+#cancel,
+.to_order button,
+#addToCart,
+.to_order span {
   color: snow;
 }
 
 .variants_company,
 .vacancies,
-footer,
-figure {
+figure,
+.notification,
+.variants_pizza .buttons button:focus {
   background-color: snow;
 }
 
@@ -201,11 +255,23 @@ a {
   color: inherit;
 }
 
+.products ul li a:hover,
+.info ul li a:hover {
+  text-decoration: underline;
+}
+
 footer {
   background-color: OldLace;
   margin-top: 30px;
-  padding: 10px;
+  padding: 30px;
   border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location {
+  margin: 10px 0 10px 0;
 }
 
 .info {
@@ -256,6 +322,11 @@ header {
   width: 100%;
   height: auto;
   transform: scale(0.8);
+  transition: 0.3s all linear;
+}
+
+.photo:hover {
+  transform: scale(0.95);
 }
 
 .products {
@@ -279,6 +350,7 @@ header {
 form {
   background-color: aliceblue;
   color: dimgrey;
+  padding: 0 20px;
   margin: 20px 0;
   padding: 40px;
   font-size: 1.2em;
@@ -286,28 +358,44 @@ form {
   width: 80%;
 }
 
+.to_order {
+  display: flex;
+  justify-content: center;
+}
+
+.to_order button,
+#addToCart,
+.to_order span {
+  background-color: #A60C00;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#addToCart {
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
 .pizza_plaza {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  color: snow;
   font-size: 30px;
   padding: 10px;
 }
 
 figcaption {
   word-break: break-all;
-  font-style: bold;
   font-size: larger;
   font-weight: 800;
   margin-left: 40px;
-  align-items: left;
 }
 
 figure {
-  background-color: snow;
   border-radius: 20px;
   width: 40%;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 img {
@@ -318,6 +406,14 @@ img {
   margin-right: 20px;
 }
 
+@media (max-width: 1024px) {
+  .promotions {
+    height: 600px;
+  }
+  .promotions img {
+    width: 90%;
+  }
+}
 @media (max-width: 920px) {
   .logo {
     border-radius: 300px;
@@ -328,7 +424,7 @@ img {
 }
 @media (max-width: 768px) {
   .promotions img {
-    width: 100%;
+    width: 90%;
   }
   .promotions {
     height: 500px;
@@ -338,6 +434,7 @@ img {
   }
   .vacancies ul {
     padding-left: 30px;
+    margin: 0;
   }
   .variants {
     padding: 50px;
@@ -345,20 +442,30 @@ img {
   form {
     width: 100%;
   }
+  .about,
+  .first,
+  .to_order button,
+  #addToCart {
+    font-size: 14px;
+  }
 }
 @media (max-width: 630px) {
   .description {
     margin-right: 10px;
   }
   .promotions img {
-    height: 100%;
-    object-fit: fill;
+    object-fit: contain;
   }
   .info ul {
     display: block;
   }
   .variants {
     padding: 10px;
+  }
+}
+@media (max-width: 560px) {
+  .promotions {
+    height: 300px;
   }
 }
 @media (max-width: 480px) {
@@ -396,5 +503,13 @@ img {
   }
   .description {
     margin: 0;
+  }
+  .about,
+  .first {
+    font-size: 14px;
+  }
+  .to_order button,
+  #addToCart {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

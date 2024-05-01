@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <section class="main">
         <header class="dessert">
             <div class="logo-brand">
                 <img src="./изображения/logo.svg" class="logo">
@@ -24,52 +24,83 @@
             </div>
         </header>
 
-        <div class="products">
+        <section class="products">
             <ul>
                 <li><a href="index.html">Главная</a></li>
                 <li><a href="pizza.html">Пицца</a></li>
                 <li><a href="drinks.html">Напитки</a></li>
                 <li><a href="sauce.html">Соусы</a></li>
             </ul>
-        </div>
+        </section>
 
         <article class="variants_dessert">
             <div class="variants">
                 <figure>
                     <img src="./десерты/cream.png" class="photo">
-                    <figcaption>Ванильное мороженное</figcaption>
+                    <figcaption>Ванильное мороженое</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 2,49р</li>
+                        <li class="price">Цена: 2.49р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('vanilla')">-</button>
+                        <span id="quantity_vanilla">0</span>
+                        <button onclick="increaseNumber('vanilla')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./десерты/chocolate.png" class="photo">
-                    <figcaption>Шоколадное мороженное</figcaption>
+                    <figcaption>Шоколадное мороженое</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 2,49р</li>
+                        <li class="price">Цена: 2.49р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('chocolate')">-</button>
+                        <span id="quantity_chocolate">0</span>
+                        <button onclick="increaseNumber('chocolate')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./десерты/strawberry.png" class="photo">
-                    <figcaption>Клубничное мороженное</figcaption>
+                    <figcaption>Клубничное мороженое</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 2,49р</li>
+                        <li class="price">Цена: 2.49р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('strawberry')">-</button>
+                        <span id="quantity_strawberry">0</span>
+                        <button onclick="increaseNumber('strawberry')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./десерты/cherry.png" class="photo">
-                    <figcaption>Вишневое мороженное</figcaption>
+                    <figcaption>Вишневое мороженое</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 2,49р</li>
+                        <li class="price">Цена: 2.49р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('cherry')">-</button>
+                        <span id="quantity_cherry">0</span>
+                        <button onclick="increaseNumber('cherry')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
 
             </div>
         </article>
         <footer>
-            <p>Контакты: Игорь Романов pigeon99905@gmail.com</p>
+            <div class="icons">
+                <a href="https://github.com/romigo29"><img src="./изображения/github.png" class="icon"></a>
+            </div>
+            <div class="worktime"> Время работы: Пн - Чт 10:00-22:00, Пт - Вс 10:00-23:00; без праздников и выходных!
+            </div>
+            <div class="location"> Республика Беларусь, г. Минск. ул. Свердлова 13а</div>
+            <div class="copyright"> ©Pizza Plaza, 2024</div>
         </footer>
-    </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

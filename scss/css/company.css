@@ -2,7 +2,21 @@
   background-color: #004060;
 }
 
-.about {
+.about,
+.first {
   font-size: 130%;
   line-height: 1.5;
+  text-indent: 3em;
+}
+
+.first:first-letter {
+  font-size: 200%;
+  background-color: #004060;
+}
+
+.info_img {
+  display: block;
+  margin: auto;
+  max-width: 75%;
+  height: auto;
 }/*# sourceMappingURL=company.css.map */

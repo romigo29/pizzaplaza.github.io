@@ -1,5 +1,6 @@
 $order-color: #1776a5;
 $pastel-order: #63bdea;
+$snow: snow;
 
 .order {
     background-color: $order-color;
@@ -9,6 +10,7 @@ $pastel-order: #63bdea;
     background-color: $pastel-order;
 }
 
-.form_order {
-    border: 2px dashed;
+.notification {
+    padding: 20px;
+    text-align: center;
 }

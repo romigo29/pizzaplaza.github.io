@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <section class="main">
         <header class="drinks">
             <div class="logo-brand">
                 <img src="./изображения/logo.svg" class="logo">
@@ -38,34 +39,65 @@
                     <ul class="description">
                         <li class="price">Цена: 2,99р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('cola')">-</button>
+                        <span id="quantity_cola">0</span>
+                        <button onclick="increaseNumber('cola')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
-                    <img src="./напитки/cola_zero.png" class ="photo">
+                    <img src="./напитки/cola_zero.png" class="photo">
                     <figcaption>Кола зиро</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 3,99р</li>
+                        <li class="price">Цена: 2,99р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('cola_zero')">-</button>
+                        <span id="quantity_cola_zero">0</span>
+                        <button onclick="increaseNumber('cola_zero')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
-                    <img src="./напитки/sprite.png" class="photo">
+                    <img src="./напитки/sprite2.png" class="photo">
                     <figcaption>Спрайт</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 3,99р</li>
+                        <li class="price">Цена: 2,99р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('sprite')">-</button>
+                        <span id="quantity_sprite">0</span>
+                        <button onclick="increaseNumber('sprite')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
                 <figure>
                     <img src="./напитки/fanta.png" class="photo">
                     <figcaption>Фанта</figcaption>
                     <ul class="description">
-                        <li class="price">Цена: 3,99р</li>
+                        <li class="price">Цена: 2,99р</li>
                     </ul>
+                    <div class="to_order">
+                        <button onclick="decreaseNumber('fanta')">-</button>
+                        <span id="quantity_fanta">0</span>
+                        <button onclick="increaseNumber('fanta')">+</button>
+                    </div>
+                    <button id="addToCart" onclick="showNotification(0)">Добавить в заказ</button>
                 </figure>
             </div>
         </article>
         <footer>
-            <p>Контакты: Игорь Романов pigeon99905@gmail.com</p>
+            <div class="icons">
+                <a href="https://github.com/romigo29"><img src="./изображения/github.png" class="icon"></a>
+            </div>
+            <div class="worktime"> Время работы: Пн - Чт 10:00-22:00, Пт - Вс 10:00-23:00; без праздников и выходных!
+            </div>
+            <div class="location"> Республика Беларусь, г. Минск. ул. Свердлова 13а</div>
+            <div class="copyright"> ©Pizza Plaza, 2024</div>
         </footer>
-    </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

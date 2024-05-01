@@ -1,5 +1,6 @@
 $job-color: #004060;
 $pastel-job: #1da6eb;
+$cancel: #FF5640;
 
 .job {
     background-color: $job-color;
@@ -22,9 +23,21 @@ select {
 }
 
 .vacancies {
-    // margin: 40px 100px 40px 100px;
+    margin: 40px 100px 40px 100px;
     padding: 40px;
     margin-top: 40px;
     border-radius: 30px;
     width: 80%;
+}
+
+form button {
+    font-size: 16px;
+}
+
+#registration {
+    background-color: $pastel-job;
+}
+
+#cancel {
+    background-color: $cancel;
 }

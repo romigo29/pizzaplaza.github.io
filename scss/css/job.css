@@ -19,8 +19,21 @@ select {
 }
 
 .vacancies {
+  margin: 40px 100px 40px 100px;
   padding: 40px;
   margin-top: 40px;
   border-radius: 30px;
   width: 80%;
+}
+
+form button {
+  font-size: 16px;
+}
+
+#registration {
+  background-color: #1da6eb;
+}
+
+#cancel {
+  background-color: #FF5640;
 }/*# sourceMappingURL=job.css.map */
