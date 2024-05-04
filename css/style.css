@@ -330,9 +330,9 @@ header {
 }
 
 .products {
-  background-color: #F5F5F5;
   display: flex;
   justify-content: center;
+  background-color: #F5F5F5;
 }
 
 .products > ul > li {
@@ -391,10 +391,10 @@ figcaption {
 }
 
 figure {
-  border-radius: 20px;
-  width: 40%;
   display: flex;
   justify-content: center;
+  border-radius: 20px;
+  width: 40%;
   flex-direction: column;
 }
 

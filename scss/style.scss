@@ -157,8 +157,8 @@ header {
 }
 
 .products {
-    background-color: #F5F5F5;
     @include flex-center;
+    background-color: #F5F5F5;
 }
 
 .products>ul>li {
@@ -215,9 +215,9 @@ figcaption {
 }
 
 figure {
+    @include flex-center;
     border-radius: 20px;
     width: 40%;
-    @include flex-center;
     flex-direction: column;
 }
 
