@@ -194,7 +194,7 @@ form button {
 }
 
 html {
-  min-width: 390px;
+  min-width: 280px;
 }
 
 figure {
@@ -411,7 +411,7 @@ img {
     height: 600px;
   }
   .promotions img {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 920px) {
@@ -424,7 +424,7 @@ img {
 }
 @media (max-width: 768px) {
   .promotions img {
-    width: 100%;
+    width: 90%;
   }
   .promotions {
     height: 500px;
@@ -445,8 +445,7 @@ img {
   .about,
   .first,
   .to_order button,
-  #addToCart,
-  .info > ul > li {
+  #addToCart {
     font-size: 14px;
   }
 }
@@ -489,9 +488,6 @@ img {
     padding: 0 2px;
   }
   .info > ul > li a {
-    font-size: 15px;
-  }
-  .products > ul > li {
     font-size: 15px;
   }
   .description {
