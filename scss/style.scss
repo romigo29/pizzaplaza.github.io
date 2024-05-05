@@ -332,11 +332,16 @@ img {
     }
 
     .info>ul>li {
+        font-size: 14px;
         padding: 0 2px;
 
         a {
             font-size: 15px;
         }
+    }
+
+    .products>ul>li {
+        font-size: 14px;
     }
 
     .description {
@@ -365,5 +370,17 @@ img {
     .to_order button,
     #addToCart {
         font-size: 20px;
+    }
+}
+
+@media (max-width:380px) {
+
+    .info>ul>li>a,
+    .products>ul>li {
+        font-size: 12px;
+    }
+
+    .logo-brand>.pizza_plaza {
+        font-size: 18px;
     }
 }
