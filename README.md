@@ -1,2 +1,2 @@
-# Сайтик (на стадии согласования деталей)
+# Сайтик)
 https://romigo29.github.io/pizzaplaza.github.io/
