@@ -203,10 +203,11 @@ figure {
 
 .icon {
   width: 50px;
-  height: 50p;
+  height: 50px;
 }
 
 .notification {
+  margin-top: 20px;
   font-family: "Montserrat";
 }
 
