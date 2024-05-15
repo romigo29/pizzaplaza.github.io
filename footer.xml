@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./css/style.css"?>
+<root>
+    <worktime>
+        Время работы:
+    </worktime>
+     <weekdays> 
+     Пн - Чт 10:00-22:00, 
+     </weekdays> 
+     <weekends>
+     Пт - Вс 10:00-23:00; без праздников и выходных!
+     </weekends>
+    <location class="location">
+        Республика Беларусь, г. Минск. ул. Свердлова 13а
+    </location>
+    <copyright class="copyright">
+        ©Pizza Plaza, 2024
+    </copyright>
+</root>
