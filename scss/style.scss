@@ -32,6 +32,16 @@ figure {
     height: 50px;
 }
 
+#xml-content>p {
+    font-family: 'Times New Roman';
+}
+
+#xml-content>p:nth-child(1),
+#xml-content>p:nth-child(2),
+#xml-content>p:nth-child(3) {
+    margin: 0;
+}
+
 .notification {
     margin-top: 20px;
     font-family: "Montserrat";
@@ -102,9 +112,8 @@ footer {
     margin: 10px 0 10px 0;
 }
 
-.info {
-    justify-content: space-between;
-    align-items: center;
+.copyright {
+    text-align: center;
 }
 
 .info>ul {
@@ -279,7 +288,8 @@ img {
     .about,
     .first,
     .to_order button,
-    #addToCart {
+    #addToCart,
+    #xml-content>p {
         font-size: 14px;
     }
 }
@@ -374,7 +384,8 @@ img {
 @media (max-width:380px) {
 
     .info>ul>li>a,
-    .products>ul>li {
+    .products>ul>li,
+    #xml-content>p {
         font-size: 12px;
     }
 

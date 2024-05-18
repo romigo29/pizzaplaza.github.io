@@ -22,11 +22,6 @@
   zoom: 30%;
 }
 
-.pizza_plaza {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 160%;
-}
-
 .variants_promotions {
   background-color: #ffc074;
   margin-top: 20px;
@@ -206,6 +201,16 @@ figure {
   height: 50px;
 }
 
+#xml-content > p {
+  font-family: "Times New Roman";
+}
+
+#xml-content > p:nth-child(1),
+#xml-content > p:nth-child(2),
+#xml-content > p:nth-child(3) {
+  margin: 0;
+}
+
 .notification {
   margin-top: 20px;
   font-family: "Montserrat";
@@ -275,9 +280,8 @@ footer {
   margin: 10px 0 10px 0;
 }
 
-.info {
-  justify-content: space-between;
-  align-items: center;
+.copyright {
+  text-align: center;
 }
 
 .info > ul {
@@ -446,7 +450,8 @@ img {
   .about,
   .first,
   .to_order button,
-  #addToCart {
+  #addToCart,
+  #xml-content > p {
     font-size: 14px;
   }
 }
@@ -520,7 +525,8 @@ img {
 }
 @media (max-width: 380px) {
   .info > ul > li > a,
-  .products > ul > li {
+  .products > ul > li,
+  #xml-content > p {
     font-size: 12px;
   }
   .logo-brand > .pizza_plaza {
